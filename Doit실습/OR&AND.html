@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>논리 연산자</title>
+  </head>
+  <body>
+    <!-- 조건을 2개 이상 체크할 경우애는 논리 연산자르 사용해 조건식을 만든다. 두 조건이  true일 경우와 조건1개만 true일 경우 처럼 여러 경우의 수를 따질때는 논리 연사자를 사용
+      -->
+    <!-- OR 연산자 -->
+    <!--  OR연산자 기호는 '||'를 사용하며, 피연산자 2개 중에서 true가 하나라도 있으면 결과값은 true이다. -->
+  </body>
+  <script>
+    // OR연산자 사용
+    // let numberOne = prompt("50 미만인 숫자를 입력하세요");
+    // let numberTwo = prompt("50 미만인 숫자를 입력하세요.");
+
+    // if (numberOne < 10 || numberTwo < 10) {
+    //   alert("숫자 2개 중에서 최소 하나는 10 미만입니다.");
+    // } else {
+    //   alert("숫자 2개 중에서 10 미만인 수가 없다");
+    // }
+
+    // AND 연산자
+    // AND 연산자 기호는 '&&'를 사용하며, 피연산자 2개 중에서  false가 하나라도 있으면 결과값은  false가 된다
+    let numberOne = prompt("50 미만인 숫자를 입력하세요");
+    let numberTwo = prompt("50 미만인 숫자를 입력하세요.");
+
+    if (numberOne < 50 && numberTwo < 50) {
+      alert("숫자 2개 중에서 최소 하나는 50 미만입니다.");
+    } else {
+      alert("조건에 맞지 않는 숫자입니다.");
+    }
+  </script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자료형</title>
+  </head>
+  <body>
+    <script>
+      // 자료형이랑 프로그램에서 처리할 자료(data) 의 형태를 말한다.
+      // 자료형은 숫자,문자('',""),논리형(참-true, 거짓-false) 과 같은 기본유형이 있고,
+      // 배열, 객체를 다루는 복합유형,
+      // undefined,null과 같은 특수유형 이렇게 3가지가 있다.
+
+      //숫자형
+      let num = 200;
+      document.write(num + "=숫자형");
+      console.log(num);
+      //---------------------------------------------
+      // 문자형
+      let string = "Hello";
+      document.write(string + "=문자형");
+      console.log(string);
+      //------------------------------
+      //배열
+      // 배열은 대괄호[]로 묶으면 배열은 선언할수있음. 괄호안에 값을 입력하지 않으면 빈 배열로 선언된다.
+      // 여러개의 데이터 중 하나만 뽑고싶으면 배열[idx]값을 넣어준다 인덱스는 0부터 시작
+      const arr = ["봄", "여름", "가을", "겨울"];
+      document.write(arr); //전체 봄,여름,가을,겨울 이 화면에 출력
+      document.write(arr[2]); // '가을'이 화면에 출력
+    </script>
+  </body>
+</html>

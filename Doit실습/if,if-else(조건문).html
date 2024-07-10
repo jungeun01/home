@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>조건문</title>
+  </head>
+  <body>
+    <!-- if 문이나 if ~ else 문을 사용하면 스크립트 안에서 조건을 체크할 수있다.
+     if 문에서는 괄호안의 조건을 체크해서 결괏값이 true면 if문 다음에 나오는 명령을 실행,false이면 
+     아무것도 하지않는다. 조건을 만족했을 때 실행할 명령이 여러 개라면  중괄호{}로 묶고 그안ㄴ에 명령을 나열하여 순서대로 한꺼번에 처리하라고 표시. -->
+  </body>
+  <script>
+    //{}로 묶은 영역을 코드블록( block)이라함
+
+    // if(조건){
+    //      조건 결과값이 true 일때 실행 할 명령
+    // }
+
+    // if 문은 결과값이 true  일때만 실행하므로  true 가 아닐 때 명령을 수행하려면 한계가 있다.
+    // 그래서 등장한 것이 else문 이다.
+    // if~else문은 if 조건의 결과 값이 true가 아닐때 실행할 명령을 else 문 다음에 추가한다.
+
+    // if(조건){조건 결과값이 true 일 때 실행 할 명령}else{
+    //     조건 결과값이 false 일 때 실행할 명령
+    // }
+
+    // 3의 배수 확인하기
+    // let userNumber = prompt("숫자를 입력하세요");
+    // if (userNumber % 3 === 0) {
+    //   alert("3의 배수입니다.");
+    // } else {
+    //   alert1("3의 배수가 아닙니다.");
+    // }
+
+    //----------------------------------------
+
+    // 중첩문
+    // let userNumber = prompt("숫자를 입력하세요");
+    // if (userNumber !== null) {
+    //   if (userNumber % 3 === 0) {
+    //     alert("3의 배수입니다.");
+    //   } else {
+    //     alert("3의 배수가 아닙니다.");
+    //   }
+    // } else {
+    //   alert("입력이 취소되었습니다.");
+    // }
+    // console.log(userNumber);
+
+    //----------------------------------------------------
+    // 조건연산자
+    // 조건이  하나이고 true 일때와 false 일 때 실행할 명령이 각각 하나뿐이라면 if-else문 대신에 조건연산자를 사용하는것이 간단.
+    // 조건 연산자는 '?'와 ':' 기호로 이루어짐
+    // (조건)? true 일때 실행할 명령 : false일 떄 실행 할 명령
+
+    let userNumber = prompt("숫자를 입력하세요");
+    if (userNumber !== null) {
+      userNumber % 3 === 0
+        ? alert("3의 배수입니다")
+        : alert("3의 배수가 아닙니다.");
+    } else alert("취소입니다.");
+  </script>
+</html>
