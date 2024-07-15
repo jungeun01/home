@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>switch문</title>
+  </head>
+  <body></body>
+  <script>
+    let session = prompt("관심 섹셔을 선택해 주세요.1-마케팅, 2-개발,3-디자인");
+    switch (session) {
+      case "1":
+        document.write("<p> 마케팅 섹션은 <strong>201호</strong>에서</p>");
+        break;
+      case "2":
+        document.write("<p> 개발 섹션은 <strong>203호</strong>에서</p>");
+        break;
+      case "3":
+        document.write("<p> 디자인12 섹션은 <strong>205호</strong>에서</p>");
+        break;
+      default:
+        alert("잘못 입력했습니다.");
+    }
+    //  자바스크립트에서 조건을 체크 할때는 if~else 문을 사용하지만, 처리할 명령이 많다면
+    // if~else문을 여러개 사용하는 것 보다 switch문이 더편리하다.
+    // case값과 명령값이 일대일로 맞아야  조건과 일치하는 case문의 명령을 실행한후에는
+    // switch문을 완전히 빠져나온다.
+  </script>
+</html>
