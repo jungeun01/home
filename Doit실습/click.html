@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>클릭 이벤트</title>
+  </head>
+  <style>
+    ul li {
+      list-style-type: none;
+      border: 1px solid black;
+      padding: 15px 30px;
+      display: flex;
+      margin: 10px;
+    }
+    ul {
+      display: flex;
+    }
+    #result {
+      border: 1px solid black;
+      width: 500px;
+      height: 500px;
+      margin-left: 300px;
+    }
+  </style>
+  <body>
+    <ul>
+      <!-- 클릭 이벤트 누르면 alert  창 나옴 -->
+      <li><a href="#" onclick="alert('버튼을 클릭했습니다.')">Green</a></li>
+      <li><a href="#" onclick="alert('버튼을 클릭했습니다.')">orange</a></li>
+      <li><a href="#" onclick="alert('버튼을 클릭했습니다.')">purple</a></li>
+      <!-- 클릭 이벤트 누르면 색 나옴 -->
+      <li><a href="#" onclick="changeBg('pink')">pink</a></li>
+      <li><a href="#" onclick="changeBg('orange')">orange</a></li>
+      <li><a href="#" onclick="changeBg('purple')">purple</a></li>
+    </ul>
+    <div id="result"></div>
+  </body>
+  <script>
+    function changeBg(color) {
+      const result = document.querySelector("#result");
+      result.style.backgroundColor = color;
+    }
+  </script>
+</html>
