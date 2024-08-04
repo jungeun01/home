@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>객체</title>
+  </head>
+  <body>
+    <!-- 객체 선언 방법 -->
+    <script>
+      let a = {};
+      let b = new Object();
+      console.log(a);
+      console.log(b);
+      //    객체 생성 후 프로퍼티 추가 방법
+      a.age = 20;
+      a.name = "홍길동";
+      console.log(a);
+      a["addr"] = "대전광역시 중구";
+      a["tel"] = "010-0000-0000";
+      console.log(a);
+
+      //   객체 생성과 동시애 프로퍼티 추가 방법
+      let c = {
+        age: 25,
+        name: "둘리",
+        addr: "대전광역시 중구",
+        tel: "010-2333-2333",
+      };
+      console.log(c);
+      //  객체의 값을 가져오는 방법
+      console.log(c.name); //둘리
+      console.log(c.addr); //주소
+      console.log(c["tel"]); //번호
+
+      //   object.keys(객체)-객체의 키 값을 배열로 반환
+      const keys = Object.keys(a);
+      console.log(keys);
+
+      //object.values(객체)-object 의 value 값을 배열로 반환
+      const values = Object.values(c);
+      console.log(values);
+
+      // object.entries(객체)-object 의 key,value 쌍을 배열로 반환
+      const entries = Object.entries(a);
+      console.log(entries);
+    </script>
+  </body>
+</html>
