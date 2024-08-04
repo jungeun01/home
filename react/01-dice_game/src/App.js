@@ -10,7 +10,7 @@ function random(n) {
 function App() {
   const [gameHistory, setGameHistory] = useState([]);
   const [otherGameHistory, setOtherGameHistory] = useState([]);
-  console.log(gameHistory);
+  // console.log(gameHistory);
   const handleRollClick = () => {
     const nextMyNum = random(6);
     const nextOtherNum = random(6);
@@ -21,6 +21,7 @@ function App() {
     setGameHistory([]);
     setOtherGameHistory([]);
   };
+  console.log(random);
 
   return (
     <div className="App">
