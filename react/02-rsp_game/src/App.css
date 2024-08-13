@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  min-width: 575px;
+  max-width: 620px;
+  margin: 45px auto;
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.App-title {
+  text-align: center;
+  margin: 0 0 34px;
+}
+.reset {
+  position: absolute;
+  top: 40px;
+  right: 48px;
+}
+.score {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.count {
+  background-color: pink;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* font-size: 30px; */
+  border-radius: 10px;
+}
+.number {
+  font-size: 40px;
+}
+.ver {
+  font-size: 50px;
+}
+.rsp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.bet {
+  font-size: 17px;
+}
+.bet > input {
+  width: 65px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.history {
+  background-color: pink;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
