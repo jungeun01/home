@@ -1,23 +1,27 @@
 {
-  "name": "03-count",
+  "name": "04-test",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "03-count": "file:",
+    "04-test": "file:",
+    "axios": "^1.7.7",
+    "body-parser": "^1.20.3",
+    "browserify-zlib": "^0.2.0",
+    "express": "^4.21.1",
+    "parseurl": "^1.3.3",
     "react": "^18.3.1",
+    "react-app-rewired": "^2.2.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.26.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": [
